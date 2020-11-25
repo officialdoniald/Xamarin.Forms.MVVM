@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0.0</Version>
+    <Authors>Bence Lenart</Authors>
+    <Company>officialdoniald</Company>
+    <PackageId>Xamarin.Forms.MVVM_officialdoniald</PackageId>
+    <PackageProjectUrl>https://github.com/officialdoniald/Xamarin.Forms.MVVM</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/officialdoniald/Xamarin.Forms.MVVM</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>xamarin,forms,mvvm,di</PackageTags>
+    <PackageReleaseNotes>MVVM.</PackageReleaseNotes>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageIcon>odicon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.1180" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Users\bence\Downloads\odicon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
