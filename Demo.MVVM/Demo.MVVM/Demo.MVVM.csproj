@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Xamarin.Forms.MVVM\Xamarin.Forms.MVVM.csproj" />
   </ItemGroup>
 

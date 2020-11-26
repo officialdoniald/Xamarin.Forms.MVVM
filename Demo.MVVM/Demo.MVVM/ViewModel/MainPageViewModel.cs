@@ -1,4 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using Demo.MVVM.Model;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.MVVM.ViewModel.Base;
@@ -21,6 +24,19 @@ namespace Demo.MVVM.ViewModel
             }
         }
 
+
+        private ObservableCollection<Profil> _profils;
+
+        public ObservableCollection<Profil> Profils
+        {
+            get { return _profils; }
+            set
+            {
+                _profils = value;
+                RaisePropertyChanged(() => Profils);
+            }
+        }
+
         #endregion
 
         #region Commands
@@ -31,6 +47,13 @@ namespace Demo.MVVM.ViewModel
         {
             Device.BeginInvokeOnMainThread(() => {
                 Title = "Clicked!";
+                Profils.FirstOrDefault().Name = "Other";
+                Profils.Add(
+                    new Profil()
+                    {
+                        Name = "Somebody"
+                    }
+                );
             });
         }
 
@@ -48,6 +71,14 @@ namespace Demo.MVVM.ViewModel
             Navigation = navigation;
 
             Title = "Hello, Xamarin.Forms.MVVM!";
+
+            Profils = new ObservableCollection<Profil>
+            {
+                new Profil()
+                {
+                    Name = "Somebody"
+                }
+            };
         }
     }
 }
