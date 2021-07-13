@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0.2</Version>
+    <Version>1.0.0.3</Version>
     <Authors>Bence Lenart</Authors>
     <Company>officialdoniald</Company>
     <PackageId>Xamarin.Forms.MVVM_officialdoniald</PackageId>
@@ -14,6 +14,7 @@
     <PackageReleaseNotes>MVVM.</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageIcon>odicon.png</PackageIcon>
+    <PackageIconUrl />
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\Users\bence\Downloads\odicon.png">
+    <None Include="odicon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>

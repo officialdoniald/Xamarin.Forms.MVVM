@@ -25,6 +25,23 @@ namespace Xamarin.Forms.MVVM.ViewModel.Base
             }
         }
 
+
+        private bool _isLoading;
+
+        public bool IsLoading
+        {
+            get
+            {
+                return _isLoading;
+            }
+
+            set
+            {
+                _isLoading = value;
+                RaisePropertyChanged(() => IsLoading);
+            }
+        }
+
         #endregion
 
         #region Commands
